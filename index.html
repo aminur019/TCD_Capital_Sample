@@ -28,6 +28,30 @@
       scrollbar-width: none;
     }
   </style>
+  <script>
+        // Right-click নিষ্ক্রিয় করতে
+        document.addEventListener('contextmenu', (event) => event.preventDefault());
+
+        // কীবোর্ড শর্টকাট নিষ্ক্রিয় করতে
+        document.addEventListener('keydown', (event) => {
+            if (
+                (event.ctrlKey && event.key === 's') || // Ctrl+S
+                (event.ctrlKey && event.key === 'u') || // Ctrl+U
+                (event.ctrlKey && event.key === 'c') || // Ctrl+C
+                (event.key === 'F12')                  // F12
+            ) {
+                event.preventDefault();
+                alert("This action is disabled on this website.");
+            }
+        });
+
+        // Address bar থেকে লিংক কপি প্রতিরোধ (Referrer কে হ্যান্ডল করা)
+        window.onload = () => {
+            if (window.location !== window.parent.location) {
+                window.parent.location = window.location;
+            }
+        };
+    </script>
  </head>
  <body class="relative">
   <!-- Header / Navigation Bar -->
@@ -93,7 +117,7 @@
   <main class="pt-20">
    <!-- Hero Section -->
    <section aria-label="Hero Section" class="relative overflow-hidden" id="hero">
-    <img alt="Abstract architectural lines in blue tones, representing modern finance and stability" class="w-full h-[60vh] object-cover brightness-75" height="1080" loading="lazy" src="https://storage.googleapis.com/a1aa/image/8a0e79e9-dcf5-4e4d-8d86-c0d7ba5854a5.jpg" width="1920"/>
+    <img alt="Abstract architectural lines in blue tones, representing modern finance and stability" class="w-full h-[60vh] object-cover brightness-75" height="1080" loading="lazy" src="https://storage.googleapis.com/a1aa/image/e723455f-0138-4273-6e9f-77d44a79dc76.jpg" width="1920"/>
     <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-6 sm:px-12 md:px-20 lg:px-32">
      <h1 class="text-white text-3xl sm:text-4xl md:text-5xl font-extrabold max-w-4xl drop-shadow-lg" data-aos="fade-up" data-aos-delay="100">
       Generating Enduring Value Through Disciplined Investment.
@@ -267,6 +291,86 @@
      </div>
     </div>
    </section>
+   <!-- Our Team Section -->
+   <section aria-labelledby="our-team-heading" class="max-w-7xl mx-auto px-6 sm:px-8 py-16" id="our-team">
+    <h2 class="text-[#1A237E] text-3xl font-bold text-center mb-12" data-aos="fade-up" id="our-team-heading">
+     Our Team
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+     <article class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="100" tabindex="0">
+      <img alt="Portrait of John Smith, Chief Investment Officer, a middle-aged man with short dark hair wearing a navy suit and blue tie" class="w-32 h-32 rounded-full object-cover mb-4" height="128" loading="lazy" src="https://storage.googleapis.com/a1aa/image/544403ac-d929-4c17-1397-f9fb7b0250a1.jpg" width="128"/>
+      <h3 class="text-xl font-semibold text-[#1A237E]">
+       John Smith
+      </h3>
+      <p class="text-[#42A5F5] font-medium mb-2">
+       Chief Investment Officer
+      </p>
+      <p class="text-[#455A64] text-sm leading-relaxed">
+       John leads the investment team with over 20 years of experience in global markets and portfolio management.
+      </p>
+     </article>
+     <article class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="200" tabindex="0">
+      <img alt="Portrait of Emily Johnson, Head of Research, a woman in her 30s with curly brown hair wearing a white blouse and black blazer" class="w-32 h-32 rounded-full object-cover mb-4" height="128" loading="lazy" src="https://storage.googleapis.com/a1aa/image/9af47554-ee85-4abc-6067-c6ececdae1ab.jpg" width="128"/>
+      <h3 class="text-xl font-semibold text-[#1A237E]">
+       Emily Johnson
+      </h3>
+      <p class="text-[#42A5F5] font-medium mb-2">
+       Head of Research
+      </p>
+      <p class="text-[#455A64] text-sm leading-relaxed">
+       Emily oversees the fundamental research process, ensuring rigorous analysis and data-driven insights.
+      </p>
+     </article>
+     <article class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="300" tabindex="0">
+      <img alt="Portrait of Michael Lee, Risk Manager, a man in his 40s with short black hair and glasses wearing a gray suit and white shirt" class="w-32 h-32 rounded-full object-cover mb-4" height="128" loading="lazy" src="https://storage.googleapis.com/a1aa/image/ff325b95-3195-40e3-f24c-4b816c5e2a4d.jpg" width="128"/>
+      <h3 class="text-xl font-semibold text-[#1A237E]">
+       Michael Lee
+      </h3>
+      <p class="text-[#42A5F5] font-medium mb-2">
+       Risk Manager
+      </p>
+      <p class="text-[#455A64] text-sm leading-relaxed">
+       Michael implements the fund’s risk management framework to safeguard investments and optimize returns.
+      </p>
+     </article>
+     <article class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="400" tabindex="0">
+      <img alt="Portrait of Sarah Patel, Portfolio Manager, a woman in her late 30s with long black hair wearing a dark blazer and light blue shirt" class="w-32 h-32 rounded-full object-cover mb-4" height="128" loading="lazy" src="https://storage.googleapis.com/a1aa/image/d9a886b2-ea53-4d9c-53b5-f773927fe850.jpg" width="128"/>
+      <h3 class="text-xl font-semibold text-[#1A237E]">
+       Sarah Patel
+      </h3>
+      <p class="text-[#42A5F5] font-medium mb-2">
+       Portfolio Manager
+      </p>
+      <p class="text-[#455A64] text-sm leading-relaxed">
+       Sarah manages portfolio construction and works closely with companies to drive long-term growth.
+      </p>
+     </article>
+     <article class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="500" tabindex="0">
+      <img alt="Portrait of David Kim, Chief Operating Officer, a man in his 50s with salt-and-pepper hair wearing a dark suit and red tie" class="w-32 h-32 rounded-full object-cover mb-4" height="128" loading="lazy" src="https://storage.googleapis.com/a1aa/image/afb6f521-f887-4e44-6e0d-5ee90d8a8904.jpg" width="128"/>
+      <h3 class="text-xl font-semibold text-[#1A237E]">
+       David Kim
+      </h3>
+      <p class="text-[#42A5F5] font-medium mb-2">
+       Chief Operating Officer
+      </p>
+      <p class="text-[#455A64] text-sm leading-relaxed">
+       David oversees operations and ensures the fund’s infrastructure supports its strategic goals.
+      </p>
+     </article>
+     <article class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="600" tabindex="0">
+      <img alt="Portrait of Laura Martinez, Investor Relations Director, a woman in her 40s with shoulder-length brown hair wearing a cream blouse and navy blazer" class="w-32 h-32 rounded-full object-cover mb-4" height="128" loading="lazy" src="https://storage.googleapis.com/a1aa/image/37e74667-488a-4c9b-b566-4aaaff004ddc.jpg" width="128"/>
+      <h3 class="text-xl font-semibold text-[#1A237E]">
+       Laura Martinez
+      </h3>
+      <p class="text-[#42A5F5] font-medium mb-2">
+       Investor Relations Director
+      </p>
+      <p class="text-[#455A64] text-sm leading-relaxed">
+       Laura manages communications and relationships with investors and partners worldwide.
+      </p>
+     </article>
+    </div>
+   </section>
    <!-- Investor Resources Section -->
    <section aria-labelledby="investor-resources-heading" class="max-w-7xl mx-auto px-6 sm:px-8 py-16" id="investor-resources">
     <h2 class="text-[#1A237E] text-3xl font-bold text-center mb-12" data-aos="fade-up" id="investor-resources-heading">
@@ -406,7 +510,7 @@
        </div>
       </div>
       <div class="rounded-lg overflow-hidden shadow-md">
-       <img alt="Google map showing the office location at 123 Finance Avenue, New York, NY 10001" class="w-full h-auto" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/d7dc8ba9-696f-4ff2-c670-8fe74c357f6f.jpg" width="600"/>
+       <img alt="Google map showing the office location at 123 Finance Avenue, New York, NY 10001" class="w-full h-auto" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/8b3c1981-61ea-4486-6b9d-8a39bff8568d.jpg" width="600"/>
       </div>
      </div>
     </div>
