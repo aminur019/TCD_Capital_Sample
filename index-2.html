@@ -24,6 +24,19 @@
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         }
+        .fade-in {
+            opacity: 0;
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+        }
+        .slide-up {
+            transform: translateY(20px);
+        }
+        .slide-up.visible {
+            transform: translateY(0);
+        }
     </style>
     <script>
         // Right-click নিষ্ক্রিয় করতে
@@ -79,7 +92,7 @@
 
     <!-- Hero Section -->
     <section class="hero-bg text-white pt-32 pb-20 px-6">
-        <div class="container mx-auto text-center">
+        <div class="container mx-auto text-center fade-in">
             <h1 class="text-4xl md:text-5xl font-bold mb-6">Generating Enduring Value Through Disciplined Investment</h1>
             <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">The TCD Opportunity Fund leverages deep market expertise to uncover unique opportunities and deliver consistent, risk-adjusted returns.</p>
             <a href="#resources" class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-md font-medium text-lg transition duration-300 inline-block">View Q1 2025 Report</a>
@@ -89,10 +102,10 @@
     <!-- Performance Metrics Section -->
     <section id="performance" class="py-16 px-6 bg-white">
         <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">A Track Record of Outperformance</h2>
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-12 fade-in slide-up">A Track Record of Outperformance</h2>
             
             <div class="grid md:grid-cols-2 gap-8 mb-12">
-                <div>
+                <div class="fade-in slide-up">
                     <h3 class="text-xl font-semibold mb-4 text-gray-800">Q1 2025 Net Return</h3>
                     <div class="bg-gray-50 p-6 rounded-lg shadow-md stat-card transition duration-300">
                         <div class="flex justify-between items-center mb-2">
@@ -114,7 +127,7 @@
                     </div>
                 </div>
                 
-                <div>
+                <div class="fade-in slide-up" style="transition-delay: 0.2s;">
                     <h3 class="text-xl font-semibold mb-4 text-gray-800">Cumulative Return (Since 12/31/13)</h3>
                     <div class="bg-gray-50 p-6 rounded-lg shadow-md stat-card transition duration-300">
                         <div class="flex justify-between items-center mb-2">
@@ -137,7 +150,7 @@
                 </div>
             </div>
             
-            <div class="bg-blue-50 p-6 rounded-lg">
+            <div class="bg-blue-50 p-6 rounded-lg fade-in slide-up" style="transition-delay: 0.4s;">
                 <div class="flex flex-col md:flex-row items-center">
                     <div class="md:w-1/2 mb-6 md:mb-0">
                         <h3 class="text-xl font-semibold mb-2 text-blue-900">Performance Comparison</h3>
@@ -145,22 +158,22 @@
                     </div>
                     <div class="md:w-1/2">
                         <div class="bg-white p-4 rounded shadow">
-                            <!-- Placeholder for chart - in a real implementation you would use Chart.js or similar -->
+                            <!-- Placeholder for chart -->
                             <div class="flex items-end h-48">
                                 <div class="flex-1 flex flex-col items-center">
-                                    <div class="bg-blue-900 w-3/4 h-40 rounded-t"></div>
+                                    <div class="bg-blue-900 w-3/4 h-40 rounded-t transition-all duration-1000 delay-500"></div>
                                     <span class="text-xs mt-2">TCD</span>
                                 </div>
                                 <div class="flex-1 flex flex-col items-center">
-                                    <div class="bg-gray-400 w-3/4 h-24 rounded-t"></div>
+                                    <div class="bg-gray-400 w-3/4 h-24 rounded-t transition-all duration-1000 delay-600"></div>
                                     <span class="text-xs mt-2">S&P 500</span>
                                 </div>
                                 <div class="flex-1 flex flex-col items-center">
-                                    <div class="bg-gray-400 w-3/4 h-8 rounded-t"></div>
+                                    <div class="bg-gray-400 w-3/4 h-8 rounded-t transition-all duration-1000 delay-700"></div>
                                     <span class="text-xs mt-2">Barclays</span>
                                 </div>
                                 <div class="flex-1 flex flex-col items-center">
-                                    <div class="bg-gray-400 w-3/4 h-16 rounded-t"></div>
+                                    <div class="bg-gray-400 w-3/4 h-16 rounded-t transition-all duration-1000 delay-800"></div>
                                     <span class="text-xs mt-2">HFRI</span>
                                 </div>
                             </div>
@@ -174,7 +187,7 @@
     <!-- About Us Section -->
     <section id="about" class="py-16 px-6 bg-gray-50">
         <div class="container mx-auto">
-            <div class="max-w-4xl mx-auto text-center">
+            <div class="max-w-4xl mx-auto text-center fade-in slide-up">
                 <h2 class="text-3xl font-bold text-blue-900 mb-6">A Foundation of Expertise and Integrity</h2>
                 <p class="text-lg text-gray-700 mb-8">TCD Opportunity Fund is a premier investment firm dedicated to generating superior, long-term, risk-adjusted returns. Our investment philosophy is rooted in deep fundamental research, a disciplined investment process, and a commitment to our partners. We strive to identify unique opportunities across various asset classes, leveraging our team's extensive experience to navigate complex market environments.</p>
                 <a href="#strategy" class="bg-blue-900 hover:bg-blue-800 text-white px-8 py-3 rounded-md font-medium transition duration-300 inline-block">Learn More About Our Philosophy</a>
@@ -185,10 +198,10 @@
     <!-- Investment Strategy Section -->
     <section id="strategy" class="py-16 px-6 bg-white">
         <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">Our Disciplined Approach</h2>
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-12 fade-in slide-up">Our Disciplined Approach</h2>
             
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gray-50 p-8 rounded-lg shadow-md strategy-card transition duration-300">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md strategy-card transition duration-300 fade-in slide-up">
                     <div class="text-blue-900 mb-4">
                         <i class="fas fa-search-dollar text-4xl"></i>
                     </div>
@@ -196,7 +209,7 @@
                     <p class="text-gray-700">We conduct exhaustive, bottom-up analysis to identify undervalued assets with strong growth potential.</p>
                 </div>
                 
-                <div class="bg-gray-50 p-8 rounded-lg shadow-md strategy-card transition duration-300">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md strategy-card transition duration-300 fade-in slide-up" style="transition-delay: 0.2s;">
                     <div class="text-blue-900 mb-4">
                         <i class="fas fa-shield-alt text-4xl"></i>
                     </div>
@@ -204,7 +217,7 @@
                     <p class="text-gray-700">A rigorous framework for risk assessment is embedded in every stage of our investment process.</p>
                 </div>
                 
-                <div class="bg-gray-50 p-8 rounded-lg shadow-md strategy-card transition duration-300">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md strategy-card transition duration-300 fade-in slide-up" style="transition-delay: 0.4s;">
                     <div class="text-blue-900 mb-4">
                         <i class="fas fa-chart-line text-4xl"></i>
                     </div>
@@ -218,24 +231,24 @@
     <!-- Investor Resources Section -->
     <section id="resources" class="py-16 px-6 bg-gray-50">
         <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">Insights & Documentation</h2>
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-12 fade-in slide-up">Insights & Documentation</h2>
             
             <div class="max-w-4xl mx-auto">
-                <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                <div class="bg-white p-8 rounded-lg shadow-md mb-8 fade-in slide-up">
                     <h3 class="text-xl font-semibold mb-2 text-blue-900">Featured Report</h3>
                     <p class="text-gray-700 mb-4">Almitas Opportunity Fund Q1 2025 Investor Letter</p>
                     <a href="#" class="bg-blue-900 hover:bg-blue-800 text-white px-6 py-2 rounded-md font-medium transition duration-300 inline-block">Download PDF</a>
                 </div>
                 
                 <div class="grid md:grid-cols-2 gap-6 mb-8">
-                    <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="bg-white p-6 rounded-lg shadow-md fade-in slide-up" style="transition-delay: 0.2s;">
                         <h3 class="text-lg font-semibold mb-2 text-gray-800">Almitas Opportunity Fund Q1 2025 Presentation</h3>
                         <a href="#" class="text-blue-900 hover:text-blue-700 font-medium inline-flex items-center">
                             View Slides <i class="fas fa-external-link-alt ml-2"></i>
                         </a>
                     </div>
                     
-                    <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="bg-white p-6 rounded-lg shadow-md fade-in slide-up" style="transition-delay: 0.4s;">
                         <h3 class="text-lg font-semibold mb-2 text-gray-800">Almitas Opportunity Fund Fact Sheet</h3>
                         <a href="#" class="text-blue-900 hover:text-blue-700 font-medium inline-flex items-center">
                             Download PDF <i class="fas fa-download ml-2"></i>
@@ -243,7 +256,7 @@
                     </div>
                 </div>
                 
-                <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="bg-white p-6 rounded-lg shadow-md fade-in slide-up" style="transition-delay: 0.6s;">
                     <details class="group">
                         <summary class="flex justify-between items-center cursor-pointer text-blue-900 font-medium">
                             <span>Archive</span>
@@ -266,10 +279,10 @@
     <!-- Contact Information Section -->
     <section id="contact" class="py-16 px-6 bg-white">
         <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">Get in Touch</h2>
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-12 fade-in slide-up">Get in Touch</h2>
             
             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div>
+                <div class="fade-in slide-up">
                     <form class="space-y-6">
                         <div>
                             <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
@@ -290,7 +303,7 @@
                     </form>
                 </div>
                 
-                <div>
+                <div class="fade-in slide-up" style="transition-delay: 0.2s;">
                     <div class="bg-gray-50 p-8 rounded-lg h-full">
                         <h3 class="text-xl font-semibold mb-6 text-blue-900">Contact Details</h3>
                         
@@ -321,7 +334,7 @@
                         </div>
                         
                         <div class="mt-8 h-48 bg-gray-200 rounded-md overflow-hidden">
-                            <!-- In a real implementation, you would embed a Google Map here -->
+                            <!-- Placeholder for Google Map -->
                             <div class="w-full h-full flex items-center justify-center text-gray-500">
                                 <i class="fas fa-map-marked-alt text-3xl"></i>
                             </div>
@@ -336,12 +349,12 @@
     <footer class="bg-blue-900 text-white py-12 px-6">
         <div class="container mx-auto">
             <div class="grid md:grid-cols-4 gap-8">
-                <div>
+                <div class="fade-in">
                     <h3 class="text-xl font-bold mb-4">TCD Opportunity Fund</h3>
                     <p class="text-blue-200">Excellence in Investment.</p>
                 </div>
                 
-                <div>
+                <div class="fade-in" style="transition-delay: 0.1s;">
                     <h4 class="font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2">
                         <li><a href="#about" class="text-blue-200 hover:text-white">About Us</a></li>
@@ -352,7 +365,7 @@
                     </ul>
                 </div>
                 
-                <div>
+                <div class="fade-in" style="transition-delay: 0.2s;">
                     <h4 class="font-semibold mb-4">Legal</h4>
                     <ul class="space-y-2">
                         <li><a href="#" class="text-blue-200 hover:text-white">Privacy Policy</a></li>
@@ -361,7 +374,7 @@
                     </ul>
                 </div>
                 
-                <div>
+                <div class="fade-in" style="transition-delay: 0.3s;">
                     <h4 class="font-semibold mb-4">Connect With Us</h4>
                     <div class="flex space-x-4">
                         <a href="#" class="text-blue-200 hover:text-white text-xl"><i class="fab fa-linkedin-in"></i></a>
@@ -370,7 +383,7 @@
                 </div>
             </div>
             
-            <div class="border-t border-blue-800 mt-8 pt-8 text-center text-blue-200">
+            <div class="border-t border-blue-800 mt-8 pt-8 text-center text-blue-200 fade-in">
                 <p>© 2025 TCD Opportunity Fund. All Rights Reserved. This website is for informational purposes only and does not constitute an offer to sell or a solicitation of an offer to buy any securities.</p>
             </div>
         </div>
@@ -401,6 +414,45 @@
                 header.classList.add('py-3');
             }
         });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in, .slide-up').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Animate the chart bars
+        const animateBars = () => {
+            const bars = document.querySelectorAll('.bg-blue-900, .bg-gray-400');
+            bars.forEach(bar => {
+                const originalHeight = bar.style.height;
+                bar.style.height = '0';
+                setTimeout(() => {
+                    bar.style.height = originalHeight;
+                }, 100);
+            });
+        };
+
+        const chartSection = document.querySelector('#performance');
+        const chartObserver = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                animateBars();
+                chartObserver.unobserve(chartSection);
+            }
+        }, { threshold: 0.5 });
+
+        chartObserver.observe(chartSection);
     </script>
 </body>
 </html>
