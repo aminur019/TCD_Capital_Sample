@@ -1,0 +1,576 @@
+<html class="scroll-smooth" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   TCD Opportunity Fund
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <style>
+   html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8fafc;
+      color: #455A64;
+    }
+    /* Scrollbar for performance counters container */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+ </head>
+ <body class="relative">
+  <!-- Header / Navigation Bar -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-transparent transition-all duration-300 ease-in-out" id="header">
+   <nav aria-label="Primary Navigation" class="max-w-7xl mx-auto flex items-center justify-between px-6 sm:px-8 py-5 md:py-4">
+    <a aria-label="TCD Opportunity Fund Logo" class="text-2xl font-semibold text-[#1A237E] tracking-tight select-none" href="#">
+     TCD Opportunity Fund
+    </a>
+    <div class="hidden md:flex space-x-8 text-sm font-medium text-[#455A64]">
+     <a class="hover:text-[#1A237E] transition-colors duration-200" href="#about">
+      About Us
+     </a>
+     <a class="hover:text-[#1A237E] transition-colors duration-200" href="#investment-strategy">
+      Investment Strategy
+     </a>
+     <a class="hover:text-[#1A237E] transition-colors duration-200" href="#our-team">
+      Our Team
+     </a>
+     <a class="hover:text-[#1A237E] transition-colors duration-200" href="#performance">
+      Performance
+     </a>
+     <a class="hover:text-[#1A237E] transition-colors duration-200" href="#investor-resources">
+      Investor Resources
+     </a>
+     <a class="hover:text-[#1A237E] transition-colors duration-200" href="#contact">
+      Contact Us
+     </a>
+    </div>
+    <a class="hidden md:inline-block px-5 py-2 border-2 border-[#42A5F5] text-[#42A5F5] rounded-md font-semibold hover:bg-[#42A5F5] hover:text-white transition-colors duration-300" href="#investor-login">
+     Investor Login
+    </a>
+    <!-- Mobile menu button -->
+    <button aria-expanded="false" aria-label="Toggle menu" class="md:hidden text-[#1A237E] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#42A5F5]" id="mobile-menu-button">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </button>
+   </nav>
+   <!-- Mobile menu -->
+   <div aria-label="Mobile Primary Navigation" class="hidden md:hidden bg-white border-t border-gray-200" id="mobile-menu" role="menu">
+    <a class="block px-6 py-3 text-[#455A64] hover:bg-[#f0f7ff] hover:text-[#1A237E]" href="#about" role="menuitem">
+     About Us
+    </a>
+    <a class="block px-6 py-3 text-[#455A64] hover:bg-[#f0f7ff] hover:text-[#1A237E]" href="#investment-strategy" role="menuitem">
+     Investment Strategy
+    </a>
+    <a class="block px-6 py-3 text-[#455A64] hover:bg-[#f0f7ff] hover:text-[#1A237E]" href="#our-team" role="menuitem">
+     Our Team
+    </a>
+    <a class="block px-6 py-3 text-[#455A64] hover:bg-[#f0f7ff] hover:text-[#1A237E]" href="#performance" role="menuitem">
+     Performance
+    </a>
+    <a class="block px-6 py-3 text-[#455A64] hover:bg-[#f0f7ff] hover:text-[#1A237E]" href="#investor-resources" role="menuitem">
+     Investor Resources
+    </a>
+    <a class="block px-6 py-3 text-[#455A64] hover:bg-[#f0f7ff] hover:text-[#1A237E]" href="#contact" role="menuitem">
+     Contact Us
+    </a>
+    <a class="block px-6 py-3 text-[#42A5F5] font-semibold hover:bg-[#e1f0ff]" href="#investor-login" role="menuitem">
+     Investor Login
+    </a>
+   </div>
+  </header>
+  <main class="pt-20">
+   <!-- Hero Section -->
+   <section aria-label="Hero Section" class="relative overflow-hidden" id="hero">
+    <img alt="Abstract architectural lines in blue tones, representing modern finance and stability" class="w-full h-[60vh] object-cover brightness-75" height="1080" loading="lazy" src="https://storage.googleapis.com/a1aa/image/8a0e79e9-dcf5-4e4d-8d86-c0d7ba5854a5.jpg" width="1920"/>
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-6 sm:px-12 md:px-20 lg:px-32">
+     <h1 class="text-white text-3xl sm:text-4xl md:text-5xl font-extrabold max-w-4xl drop-shadow-lg" data-aos="fade-up" data-aos-delay="100">
+      Generating Enduring Value Through Disciplined Investment.
+     </h1>
+     <p class="mt-4 text-white text-base sm:text-lg md:text-xl max-w-3xl drop-shadow-md" data-aos="fade-up" data-aos-delay="300">
+      The TCD Opportunity Fund leverages deep market expertise to uncover unique opportunities and deliver consistent, risk-adjusted returns.
+     </p>
+     <a class="mt-8 inline-block bg-[#42A5F5] hover:bg-[#1A237E] text-white font-semibold rounded-md px-8 py-3 shadow-lg transition-colors duration-300" data-aos="fade-up" data-aos-delay="500" href="#investor-resources">
+      View Q1 2025 Report
+     </a>
+    </div>
+   </section>
+   <!-- Key Performance Metrics Section -->
+   <section aria-labelledby="performance-heading" class="max-w-7xl mx-auto px-6 sm:px-8 py-16" id="performance">
+    <h2 class="text-[#1A237E] text-3xl font-bold text-center mb-12" data-aos="fade-up" id="performance-heading">
+     A Track Record of Outperformance.
+    </h2>
+    <!-- Q1 2025 Net Return Stats -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-16" data-aos="fade-up" data-aos-delay="100">
+     <div aria-label="TCD Q1 2025 Net Return 0.7 percent" class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center cursor-pointer hover:shadow-lg transition-shadow duration-300" tabindex="0">
+      <i class="fas fa-chart-line text-[#42A5F5] text-4xl mb-3">
+      </i>
+      <p class="text-sm text-gray-500 mb-1">
+       Q1 2025 Net Return
+      </p>
+      <p class="text-3xl font-extrabold text-[#1A237E] counter" data-target="0.7">
+       0.0%
+      </p>
+      <p class="text-sm text-[#42A5F5] font-semibold mt-1">
+       TCD
+      </p>
+     </div>
+     <div aria-label="S&amp;P 500 Q1 2025 Net Return negative 4.3 percent" class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center cursor-pointer hover:shadow-lg transition-shadow duration-300" tabindex="0">
+      <i class="fas fa-chart-bar text-[#455A64] text-4xl mb-3">
+      </i>
+      <p class="text-sm text-gray-500 mb-1">
+       Q1 2025 Net Return
+      </p>
+      <p class="text-3xl font-extrabold text-[#455A64] counter" data-target="-4.3">
+       0.0%
+      </p>
+      <p class="text-sm text-[#455A64] font-semibold mt-1">
+       S&amp;P 500
+      </p>
+     </div>
+     <div aria-label="Bloomberg Barclays Q1 2025 Net Return 2.8 percent" class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center cursor-pointer hover:shadow-lg transition-shadow duration-300" tabindex="0">
+      <i class="fas fa-dollar-sign text-[#42A5F5] text-4xl mb-3">
+      </i>
+      <p class="text-sm text-gray-500 mb-1">
+       Q1 2025 Net Return
+      </p>
+      <p class="text-3xl font-extrabold text-[#42A5F5] counter" data-target="2.8">
+       0.0%
+      </p>
+      <p class="text-sm text-[#42A5F5] font-semibold mt-1">
+       Bloomberg Barclays
+      </p>
+     </div>
+     <div aria-label="HFRI Q1 2025 Net Return negative 0.4 percent" class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center cursor-pointer hover:shadow-lg transition-shadow duration-300" tabindex="0">
+      <i class="fas fa-chart-pie text-[#455A64] text-4xl mb-3">
+      </i>
+      <p class="text-sm text-gray-500 mb-1">
+       Q1 2025 Net Return
+      </p>
+      <p class="text-3xl font-extrabold text-[#455A64] counter" data-target="-0.4">
+       0.0%
+      </p>
+      <p class="text-sm text-[#455A64] font-semibold mt-1">
+       HFRI
+      </p>
+     </div>
+    </div>
+    <!-- Cumulative Return Bar Chart -->
+    <div aria-label="Cumulative Return Since December 31, 2013" class="bg-white rounded-lg shadow-md p-8" data-aos="fade-up" data-aos-delay="300">
+     <h3 class="text-xl font-semibold text-[#1A237E] mb-6 text-center">
+      Cumulative Return (Since 12/31/13)
+     </h3>
+     <div class="space-y-6 max-w-4xl mx-auto">
+      <div class="flex items-center space-x-4">
+       <span class="w-32 text-[#42A5F5] font-semibold">
+        TCD
+       </span>
+       <div aria-hidden="true" class="h-6 bg-[#42A5F5] rounded-l-md" style="width: 100%">
+       </div>
+       <span class="ml-3 font-bold text-[#1A237E]">
+        483.7%
+       </span>
+      </div>
+      <div class="flex items-center space-x-4">
+       <span class="w-32 text-[#455A64] font-semibold">
+        S&amp;P 500
+       </span>
+       <div aria-hidden="true" class="h-6 bg-[#455A64] rounded-l-md" style="width: 56.5%">
+       </div>
+       <span class="ml-3 font-bold text-[#455A64]">
+        272.8%
+       </span>
+      </div>
+      <div class="flex items-center space-x-4">
+       <span class="w-32 text-[#42A5F5] font-semibold">
+        Bloomberg Barclays
+       </span>
+       <div aria-hidden="true" class="h-6 bg-[#42A5F5] rounded-l-md" style="width: 5.1%">
+       </div>
+       <span class="ml-3 font-bold text-[#42A5F5]">
+        24.5%
+       </span>
+      </div>
+      <div class="flex items-center space-x-4">
+       <span class="w-32 text-[#455A64] font-semibold">
+        HFRI
+       </span>
+       <div aria-hidden="true" class="h-6 bg-[#455A64] rounded-l-md" style="width: 14.7%">
+       </div>
+       <span class="ml-3 font-bold text-[#455A64]">
+        71.2%
+       </span>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- About Us Section -->
+   <section aria-labelledby="about-heading" class="max-w-5xl mx-auto px-6 sm:px-8 py-16" data-aos="fade-up" id="about">
+    <h2 class="text-[#1A237E] text-3xl font-bold text-center mb-8" id="about-heading">
+     A Foundation of Expertise and Integrity.
+    </h2>
+    <p class="text-center text-lg max-w-3xl mx-auto text-[#455A64] leading-relaxed mb-8">
+     TCD Opportunity Fund is a premier investment firm dedicated to generating superior, long-term, risk-adjusted returns. Our investment philosophy is rooted in deep fundamental research, a disciplined investment process, and a commitment to our partners. We strive to identify unique opportunities across various asset classes, leveraging our team's extensive experience to navigate complex market environments.
+    </p>
+    <div class="flex justify-center">
+     <a class="inline-block bg-[#42A5F5] hover:bg-[#1A237E] text-white font-semibold rounded-md px-8 py-3 shadow-lg transition-colors duration-300" href="#investment-strategy">
+      Learn More About Our Philosophy
+     </a>
+    </div>
+   </section>
+   <!-- Investment Strategy Section -->
+   <section aria-labelledby="investment-strategy-heading" class="max-w-7xl mx-auto px-6 sm:px-8 py-16" id="investment-strategy">
+    <h2 class="text-[#1A237E] text-3xl font-bold text-center mb-12" data-aos="fade-up" id="investment-strategy-heading">
+     Our Disciplined Approach.
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+     <div aria-label="Fundamental Research: We conduct exhaustive, bottom-up analysis to identify undervalued assets with strong growth potential." class="bg-white rounded-lg shadow-md p-8 flex flex-col items-center text-center cursor-default hover:shadow-lg transition-shadow duration-300" data-aos="fade-up" data-aos-delay="100" tabindex="0">
+      <i class="fas fa-search text-[#42A5F5] text-5xl mb-6">
+      </i>
+      <h3 class="text-xl font-semibold text-[#1A237E] mb-3">
+       Fundamental Research
+      </h3>
+      <p class="text-[#455A64] leading-relaxed">
+       We conduct exhaustive, bottom-up analysis to identify undervalued assets with strong growth potential.
+      </p>
+     </div>
+     <div aria-label="Risk Management: A rigorous framework for risk assessment is embedded in every stage of our investment process." class="bg-white rounded-lg shadow-md p-8 flex flex-col items-center text-center cursor-default hover:shadow-lg transition-shadow duration-300" data-aos="fade-up" data-aos-delay="200" tabindex="0">
+      <i class="fas fa-shield-alt text-[#42A5F5] text-5xl mb-6">
+      </i>
+      <h3 class="text-xl font-semibold text-[#1A237E] mb-3">
+       Risk Management
+      </h3>
+      <p class="text-[#455A64] leading-relaxed">
+       A rigorous framework for risk assessment is embedded in every stage of our investment process.
+      </p>
+     </div>
+     <div aria-label="Long-Term Perspective: We focus on sustainable growth, building partnerships with our portfolio companies for lasting success." class="bg-white rounded-lg shadow-md p-8 flex flex-col items-center text-center cursor-default hover:shadow-lg transition-shadow duration-300" data-aos="fade-up" data-aos-delay="300" tabindex="0">
+      <i class="fas fa-hourglass-half text-[#42A5F5] text-5xl mb-6">
+      </i>
+      <h3 class="text-xl font-semibold text-[#1A237E] mb-3">
+       Long-Term Perspective
+      </h3>
+      <p class="text-[#455A64] leading-relaxed">
+       We focus on sustainable growth, building partnerships with our portfolio companies for lasting success.
+      </p>
+     </div>
+    </div>
+   </section>
+   <!-- Investor Resources Section -->
+   <section aria-labelledby="investor-resources-heading" class="max-w-7xl mx-auto px-6 sm:px-8 py-16" id="investor-resources">
+    <h2 class="text-[#1A237E] text-3xl font-bold text-center mb-12" data-aos="fade-up" id="investor-resources-heading">
+     Insights &amp; Documentation.
+    </h2>
+    <div class="max-w-4xl mx-auto space-y-12">
+     <!-- Featured Report -->
+     <div class="bg-white rounded-lg shadow-md p-8 flex flex-col sm:flex-row items-center sm:items-start justify-between" data-aos="fade-up" data-aos-delay="100">
+      <div class="mb-4 sm:mb-0 sm:max-w-xl">
+       <h3 class="text-xl font-semibold text-[#1A237E] mb-2">
+        Almitas Opportunity Fund Q1 2025 Investor Letter
+       </h3>
+       <p class="text-[#455A64] leading-relaxed">
+        Comprehensive insights and analysis from the latest quarter.
+       </p>
+      </div>
+      <a class="inline-block bg-[#42A5F5] hover:bg-[#1A237E] text-white font-semibold rounded-md px-6 py-3 shadow-lg transition-colors duration-300 whitespace-nowrap" download="Almitas_Opportunity_Fund_Q1_2025_Investor_Letter.pdf" href="#">
+       Download PDF
+      </a>
+     </div>
+     <!-- Other Documents -->
+     <div class="bg-white rounded-lg shadow-md p-8" data-aos="fade-up" data-aos-delay="200">
+      <h3 class="text-xl font-semibold text-[#1A237E] mb-6">
+       Other Documents
+      </h3>
+      <ul class="space-y-4 text-[#455A64]">
+       <li class="flex items-center justify-between">
+        <span>
+         Almitas Opportunity Fund Q1 2025 Presentation
+        </span>
+        <a class="text-[#42A5F5] hover:text-[#1A237E] font-semibold" href="#">
+         View Slides
+        </a>
+       </li>
+       <li class="flex items-center justify-between">
+        <span>
+         Almitas Opportunity Fund Fact Sheet
+        </span>
+        <a class="text-[#42A5F5] hover:text-[#1A237E] font-semibold" download="Almitas_Opportunity_Fund_Fact_Sheet.pdf" href="#">
+         Download PDF
+        </a>
+       </li>
+      </ul>
+     </div>
+     <!-- Archive Accordion -->
+     <div class="bg-white rounded-lg shadow-md p-8" data-aos="fade-up" data-aos-delay="300">
+      <h3 class="text-xl font-semibold text-[#1A237E] mb-6">
+       Archive
+      </h3>
+      <div class="space-y-4" id="archive-accordion">
+       <details class="border border-gray-300 rounded-md">
+        <summary class="cursor-pointer select-none py-3 px-4 font-semibold text-[#1A237E] hover:bg-[#f0f7ff] rounded-md">
+         Quarterly Reports 2024
+        </summary>
+        <ul class="pl-6 pb-4 space-y-2 text-[#455A64]">
+         <li>
+          <a class="text-[#42A5F5] hover:text-[#1A237E] font-semibold" href="#">
+           Q4 2024 Investor Letter (Download PDF)
+          </a>
+         </li>
+         <li>
+          <a class="text-[#42A5F5] hover:text-[#1A237E] font-semibold" href="#">
+           Q3 2024 Investor Letter (Download PDF)
+          </a>
+         </li>
+         <li>
+          <a class="text-[#42A5F5] hover:text-[#1A237E] font-semibold" href="#">
+           Q2 2024 Investor Letter (Download PDF)
+          </a>
+         </li>
+         <li>
+          <a class="text-[#42A5F5] hover:text-[#1A237E] font-semibold" href="#">
+           Q1 2024 Investor Letter (Download PDF)
+          </a>
+         </li>
+        </ul>
+       </details>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- Contact Information Section -->
+   <section aria-labelledby="contact-heading" class="max-w-7xl mx-auto px-6 sm:px-8 py-16" id="contact">
+    <h2 class="text-[#1A237E] text-3xl font-bold text-center mb-12" data-aos="fade-up" id="contact-heading">
+     Get in Touch.
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+     <!-- Contact Form -->
+     <form action="#" aria-label="Contact form" class="bg-white rounded-lg shadow-md p-8 space-y-6" method="POST">
+      <div>
+       <label class="block text-sm font-medium text-[#1A237E] mb-1" for="name">
+        Name
+       </label>
+       <input class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#42A5F5] focus:border-transparent" id="name" name="name" placeholder="Your full name" required="" type="text"/>
+      </div>
+      <div>
+       <label class="block text-sm font-medium text-[#1A237E] mb-1" for="email">
+        Email
+       </label>
+       <input class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#42A5F5] focus:border-transparent" id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+      </div>
+      <div>
+       <label class="block text-sm font-medium text-[#1A237E] mb-1" for="message">
+        Message
+       </label>
+       <textarea class="w-full border border-gray-300 rounded-md px-4 py-2 resize-y focus:outline-none focus:ring-2 focus:ring-[#42A5F5] focus:border-transparent" id="message" name="message" placeholder="Write your message here" required="" rows="5"></textarea>
+      </div>
+      <button class="bg-[#42A5F5] hover:bg-[#1A237E] text-white font-semibold rounded-md px-6 py-3 shadow-lg transition-colors duration-300" type="submit">
+       Send Message
+      </button>
+     </form>
+     <!-- Contact Details & Map -->
+     <div class="space-y-8">
+      <div class="bg-white rounded-lg shadow-md p-8 space-y-6">
+       <div class="flex items-center space-x-4">
+        <i class="fas fa-envelope text-[#42A5F5] text-2xl">
+        </i>
+        <a class="text-[#1A237E] font-semibold hover:underline" href="mailto:investor.relations@tcdfund.com">
+         investor.relations@tcdfund.com
+        </a>
+       </div>
+       <div class="flex items-center space-x-4">
+        <i class="fas fa-phone-alt text-[#42A5F5] text-2xl">
+        </i>
+        <a class="text-[#1A237E] font-semibold hover:underline" href="tel:+18005550199">
+         +1 (800) 555-0199
+        </a>
+       </div>
+       <div class="flex items-start space-x-4">
+        <i class="fas fa-map-marker-alt text-[#42A5F5] text-2xl mt-1">
+        </i>
+        <address class="not-italic text-[#455A64] font-semibold">
+         123 Finance Avenue,
+         <br/>
+         New York, NY 10001
+        </address>
+       </div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-md">
+       <img alt="Google map showing the office location at 123 Finance Avenue, New York, NY 10001" class="w-full h-auto" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/d7dc8ba9-696f-4ff2-c670-8fe74c357f6f.jpg" width="600"/>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-[#1A237E] text-[#f8fafc] py-12">
+   <div class="max-w-7xl mx-auto px-6 sm:px-8 grid grid-cols-1 md:grid-cols-4 gap-12">
+    <div>
+     <h3 class="text-2xl font-bold mb-2 select-none">
+      TCD Opportunity Fund
+     </h3>
+     <p class="text-sm font-light max-w-xs leading-relaxed">
+      Excellence in Investment.
+     </p>
+    </div>
+    <nav aria-label="Footer Navigation" class="space-y-2">
+     <h4 class="font-semibold mb-3">
+      Quick Links
+     </h4>
+     <ul class="space-y-1 text-sm">
+      <li>
+       <a class="hover:underline" href="#about">
+        About Us
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#investment-strategy">
+        Investment Strategy
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#our-team">
+        Our Team
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#performance">
+        Performance
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#investor-resources">
+        Investor Resources
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#contact">
+        Contact Us
+       </a>
+      </li>
+     </ul>
+    </nav>
+    <div>
+     <h4 class="font-semibold mb-3">
+      Connect with Us
+     </h4>
+     <div class="flex space-x-6 text-xl">
+      <a aria-label="LinkedIn" class="hover:text-[#42A5F5]" href="https://www.linkedin.com/company/tcd-opportunity-fund" rel="noopener noreferrer" target="_blank">
+       <i class="fab fa-linkedin">
+       </i>
+      </a>
+      <a aria-label="Twitter" class="hover:text-[#42A5F5]" href="https://twitter.com/tcd_opportunity" rel="noopener noreferrer" target="_blank">
+       <i class="fab fa-twitter">
+       </i>
+      </a>
+      <a aria-label="Facebook" class="hover:text-[#42A5F5]" href="https://www.facebook.com/tcdopportunityfund" rel="noopener noreferrer" target="_blank">
+       <i class="fab fa-facebook-f">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div class="text-sm font-light max-w-xs leading-relaxed">
+     <p>
+      © 2025 TCD Opportunity Fund. All Rights Reserved. This website is for informational purposes only and does not constitute an offer to sell or a solicitation of an offer to buy any securities.
+     </p>
+    </div>
+   </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+  </script>
+  <script>
+   AOS.init({
+      once: true,
+      duration: 700,
+      easing: 'ease-out-cubic',
+    });
+
+    // Sticky header background and compact on scroll
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('bg-white', 'shadow-md');
+        header.classList.remove('bg-transparent');
+        header.querySelector('nav').classList.add('py-2');
+        header.querySelector('nav').classList.remove('py-5', 'md:py-4');
+      } else {
+        header.classList.remove('bg-white', 'shadow-md');
+        header.classList.add('bg-transparent');
+        header.querySelector('nav').classList.remove('py-2');
+        header.querySelector('nav').classList.add('py-5', 'md:py-4');
+      }
+    });
+
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      const expanded = mobileMenuButton.getAttribute('aria-expanded') === 'true' || false;
+      mobileMenuButton.setAttribute('aria-expanded', !expanded);
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Animated counters for Q1 2025 Net Return
+    const counters = document.querySelectorAll('.counter');
+    let countersStarted = false;
+
+    function animateCounters() {
+      if (countersStarted) return;
+      const triggerPoint = window.innerHeight * 0.8;
+      counters.forEach((counter) => {
+        const rect = counter.getBoundingClientRect();
+        if (rect.top < triggerPoint) {
+          countersStarted = true;
+          counters.forEach((c) => {
+            const target = parseFloat(c.getAttribute('data-target'));
+            let current = 0;
+            const increment = target > 0 ? target / 100 : target / 100;
+            const isNegative = target < 0;
+            const absTarget = Math.abs(target);
+            let displayed = 0;
+            const duration = 1500;
+            const stepTime = Math.abs(duration / absTarget);
+            let startTime = null;
+
+            function step(timestamp) {
+              if (!startTime) startTime = timestamp;
+              const progress = timestamp - startTime;
+              let val = (progress / duration) * absTarget;
+              if (val > absTarget) val = absTarget;
+              displayed = val;
+              if (isNegative) {
+                c.textContent = '-' + displayed.toFixed(1) + '%';
+              } else {
+                c.textContent = displayed.toFixed(1) + '%';
+              }
+              if (progress < duration) {
+                window.requestAnimationFrame(step);
+              } else {
+                if (isNegative) {
+                  c.textContent = target.toFixed(1) + '%';
+                } else {
+                  c.textContent = target.toFixed(1) + '%';
+                }
+              }
+            }
+            window.requestAnimationFrame(step);
+          });
+        }
+      });
+    }
+
+    window.addEventListener('scroll', animateCounters);
+    window.addEventListener('load', animateCounters);
+  </script>
+ </body>
+</html>
